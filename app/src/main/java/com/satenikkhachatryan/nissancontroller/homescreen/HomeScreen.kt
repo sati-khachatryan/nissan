@@ -145,13 +145,13 @@ fun HomeContent(
         when (event) {
             is HomeEvent.CarUnlocked -> {
                 scope.launch {
-                    snackbarHostState.showSnackbar("Ariya unlocked.")
+                    snackbarHostState.showSnackbar(CAR_UNLOCK_COMPLETE_MESSAGE)
                 }
             }
 
             is HomeEvent.UnlockingCar -> {
                 scope.launch {
-                    snackbarHostState.showSnackbar("Waking Ariya to unlock...")
+                    snackbarHostState.showSnackbar(CAR_UNLOCK_START_MESSAGE)
                 }
             }
         }
@@ -253,6 +253,9 @@ private fun CarInfoSection() {
         }
     }
 }
+
+const val CAR_UNLOCK_COMPLETE_MESSAGE = "Ariya unlocked."
+const val CAR_UNLOCK_START_MESSAGE = "Waking Ariya to unlock..."
 
 @Preview
 @Composable
