@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">NissanController</string>
+    <string name="my_nissan_ariya">My Nissan Ariya</string>
+    <string name="est_range">Est. Range</string>
+    <string name="number_120">120</string>
+    <string name="mi">mi</string>
+    <string name="celsius">70°</string>
+    <string name="city">Irvine, CA</string>
+    <string name="dialog_title">Are you sure?</string>
+    <string name="dialog_text">This action will remotely unlock your vehicle.</string>
+    <string name="dialog_confirmation">Yes</string>
+    <string name="dialog_dismiss">No</string>
+</resources>
